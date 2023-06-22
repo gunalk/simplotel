@@ -1,0 +1,471 @@
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  max-width:3840px ;
+  min-width:380px ;
+  min-height:700px;
+
+}
+
+
+
+
+
+
+.items {
+  width: 100%;
+  background-image: linear-gradient(to right, #ff85a8, #ffcd68);
+  width: 100%;
+  
+}
+
+
+
+.items img {
+  width: 100%;
+  object-fit: cover;
+   
+}
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+  letter-spacing: 2px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: large;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  width: 100%;
+  background-color: whitesmoke;
+}
+
+.lists a {
+  color: rgb(0, 0, 0);
+}
+
+
+
+ul {
+  margin-left: 285px;
+}
+
+
+.nav-food {
+  display: flex;
+  gap: 4em;
+  font-size: 14px;
+}
+
+.nav-food li:hover {
+  border-radius: 3px;
+  transition: 3s ease;
+}
+
+.nav-food li {
+  padding: 4x 4px 15px 15px;
+}
+
+
+input[type="checkbox"] {
+  display: none;
+}
+
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+
+
+.font-icons {
+  display: flex;
+  margin-right: 10px;
+}
+
+.font-icons a {
+  color: black;
+  padding-right: 1rem;
+}
+
+.font-icons{
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1190px) {
+  .nav-food {
+    gap: 2em;
+  }
+
+  ul {
+    margin-left: 9rem;
+  }
+  .navbar {
+    width: 100%;
+  }
+}
+
+@media (max-width: 985px) {
+  .nav-food {
+    gap: 1em;
+  }
+
+  ul {
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width: 865px) {
+  .nav-food {
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    z-index: 1;
+    right: 0;
+    left: 0;
+    text-align: center;
+    height: 120vh;
+  }
+
+  .nav-food li {
+    margin: 2rem;
+    font-size: large;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+
+  .nav-food li:hover {
+    display: inline-block;
+    background-color:orange;
+    transition: 0.3s ease;
+  }
+
+  .nav-food li + li {
+    margin-top: 15px;
+  }
+
+  input[type="checkbox"]:checked ~.nav-food {
+    display: initial;
+  }
+
+  .hamburger {
+    display: initial;
+  }
+}
+
+
+@media (max-width:1060px ) {
+
+  .items-text h1 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+  .items-text {
+    width: 55%;
+    font-size: 13px;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 825px) {
+
+
+  .items-text {
+    width: 45%;
+    height: 200px;
+    font-size: 13px;  
+    padding: 2rem;
+  }
+
+  .items-text h1 {
+    font-size: 0.5rem;
+    letter-spacing: 1px;
+  }
+
+  .items p {
+    font-size: 9px;
+    padding: 0;
+    letter-spacing: normal;
+  }
+}
+
+@media (max-width: 550px) {
+  .items-text {
+    top: 15%;
+    width: 60%;
+    height:150px;
+    padding: 1rem;
+  }
+
+  .items-text h1 {
+    font-size: 0.5rem;
+    letter-spacing: 1px;
+  }
+
+  .items p {
+    font-size: 8px;
+  }
+  .items img {
+    object-fit: cover;
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 250px) {
+  .items-text {
+    width: 50%;
+    height: 100px;
+  }
+ 
+}
+
+
+
+
+
+
+  
+  
+  .items2 .center {
+    display: flex;
+    justify-content: center;
+    color: white;
+    letter-spacing: 5px;
+    font-size: larger;
+    font-family: sans-serif;
+
+  }
+  .items {
+    width: 100%;
+  }
+  
+ 
+  
+  .img1 {
+    width: 100%;
+    object-fit: cover;
+   
+  }
+  
+  
+  
+  .items-text {
+    position: absolute;
+    top: 27%;
+    left: 5%;
+    background-color: rgba(242, 110, 132, 0.6);
+    width: 47%;
+    color: white;
+    overflow: hidden;
+    padding: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  
+  
+  .items-text h1 {
+    font-size: 3rem;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+  }
+  
+  /*items P  */
+  
+  .items p {
+    letter-spacing: 1px;
+    font-weight: 100;
+    color: whitesmoke;
+  }
+  
+ 
+  
+  @media (max-width: 1060px) {
+  
+    .items-text h1 {
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+    }
+    .items-text {
+      width: 55%;
+      font-size: 13px;
+      padding: 2rem;
+    }
+  }
+  
+  @media (max-width: 827px) {
+  
+  
+    .items-text {
+      width: 45%;
+      font-size: 13px;  
+      padding: 2rem;
+    }
+  
+    .items-text h1 {
+      font-size: 0.5rem;
+      letter-spacing: 1px;
+    }
+  
+    .items p {
+      font-size: 9px;
+      padding: 0;
+      letter-spacing: normal;
+    }
+  }
+  
+  @media (max-width: 552px) {
+    .items-text {
+      top: 25%;
+      left:20%;
+      width: 60%;
+      padding: 1rem;
+    }
+  
+    .items-text h1 {
+      font-size: 0.5rem;
+      letter-spacing: 1px;
+    }
+  
+    .items p {
+      font-size: 8px;
+    }
+    .items img {
+      object-fit: cover;
+      padding-bottom: 0;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .items-text {
+      width: 60%;
+      height: 70%;
+    }
+   
+  }
+  
+  
+  
+  .foods {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    object-fit: cover;
+    margin: 4rem auto;
+    font-family: sans-serif;
+    margin-top: 80px;
+  }
+  
+  .food {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: white;
+    padding:  10px 10px;
+    border-top-right-radius: 25%;
+    border-bottom-left-radius: 20%;
+    cursor: pointer;
+  }
+  
+  .food img {
+    height: 255px;
+    width: 255px;
+    object-fit: cover;
+    border-top-right-radius: 25%;
+  }
+  
+  .food .foodName {
+    letter-spacing: 1px;
+    margin: 0.5rem;
+  }
+  
+  .food p {
+    font-size: 14px;
+    font-weight: 100;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  .order{
+    text-align: center;
+    color:white;
+  }
+  
+  .second-page {
+    background-image: linear-gradient(to right, #FF69B4, #ffcd68);
+    width: 100%;
+    margin-top: 20px;
+    
+   
+  }
+  
+  .button {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .button button {
+    width: 150px;
+    height: 50px;
+    background-color: #FFC0CB;
+    color: black;
+    border-radius: 25px;
+    border: none;
+    font-size: large;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+
+@media (max-width: 900px) {
+ 
+
+ 
+
+  .foods {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 130vh;
+    
+  }
+
+  .food img {
+    height: 180px;
+    width: 180px;
+  }
+
+  .food p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .items2 .order {
+    font-size: 10px;
+  }
+
+  .foods {
+    margin-top: -1rem;
+  }
+
+  .food img {
+    height: 140px;
+    width: 140px;
+  }
+
+  .food p {
+    font-size: 10px;
+  }
+}
